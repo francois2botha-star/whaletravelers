@@ -1,0 +1,307 @@
+/* Western Cape Destinations Section */
+.western-cape-destinations {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.destinations-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.destinations-header h2 {
+  font-size: 2.5rem;
+  color: #1a1a2e;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.destinations-header p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* Destinations Grid */
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.destination-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.destination-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Image */
+.card-image-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+.card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.destination-card:hover .card-image {
+  transform: scale(1.08);
+}
+
+/* Card Overlay */
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 26, 46, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.destination-card:hover .card-overlay {
+  opacity: 1;
+}
+
+.destination-icon {
+  font-size: 4rem;
+  display: inline-block;
+}
+
+/* Card Content */
+.card-content {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  color: #1a1a2e;
+  margin: 0 0 12px;
+  font-weight: 600;
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0 0 20px;
+  flex-grow: 1;
+}
+
+/* Destination CTA */
+.destination-cta {
+  background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.destination-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 102, 204, 0.3);
+}
+
+/* Destinations Footer */
+.destinations-footer {
+  margin-top: 40px;
+}
+
+.coverage-info {
+  background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+  color: white;
+  padding: 50px 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 102, 204, 0.2);
+}
+
+.coverage-info h3 {
+  font-size: 1.8rem;
+  margin: 0 0 15px;
+  font-weight: 600;
+}
+
+.coverage-info p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 0 0 25px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.95;
+}
+
+.cta-button {
+  background: white;
+  color: #0066cc;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .destinations-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .destinations-header h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .western-cape-destinations {
+    padding: 50px 0;
+  }
+
+  .destinations-header {
+    margin-bottom: 40px;
+  }
+
+  .destinations-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .destinations-header p {
+    font-size: 1rem;
+  }
+
+  .destinations-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .destination-card {
+    border-radius: 10px;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .card-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .card-content p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  .coverage-info {
+    padding: 35px 25px;
+  }
+
+  .coverage-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .coverage-info p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .western-cape-destinations {
+    padding: 40px 0;
+  }
+
+  .destinations-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .destinations-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .destination-card {
+    border-radius: 8px;
+  }
+
+  .card-content {
+    padding: 15px;
+  }
+
+  .card-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .card-content p {
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+  }
+
+  .destination-cta {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  .coverage-info {
+    padding: 25px 15px;
+  }
+
+  .coverage-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+
+  .coverage-info p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  .cta-button {
+    padding: 12px 30px;
+    font-size: 0.95rem;
+  }
+}

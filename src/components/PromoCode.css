@@ -1,0 +1,483 @@
+.promo-loyalty-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.promo-loyalty-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* Promo Code Section */
+.promo-section {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.promo-section h3 {
+  font-size: 28px;
+  color: #1a1a2e;
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
+.promo-section > p {
+  color: #666;
+  font-size: 15px;
+  margin: 0 0 25px;
+}
+
+.promo-form {
+  margin-bottom: 30px;
+}
+
+.promo-input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.promo-input {
+  flex: 1;
+  padding: 14px 18px;
+  border: 2px solid #e0e6ed;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.promo-input:focus {
+  outline: none;
+  border-color: #0066cc;
+  box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.1);
+}
+
+.promo-input:disabled {
+  background: #f5f7fa;
+  cursor: not-allowed;
+}
+
+.promo-apply-btn,
+.promo-remove-btn {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.promo-apply-btn {
+  background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+  color: white;
+}
+
+.promo-apply-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 102, 204, 0.3);
+}
+
+.promo-remove-btn {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+  color: white;
+}
+
+.promo-remove-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 107, 107, 0.3);
+}
+
+.promo-error {
+  color: #d32f2f;
+  font-size: 14px;
+  margin: 0;
+  padding: 10px 15px;
+  background: rgba(211, 47, 47, 0.1);
+  border-radius: 8px;
+  border-left: 3px solid #d32f2f;
+}
+
+.promo-success {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  background: rgba(76, 175, 80, 0.1);
+  border-radius: 10px;
+  border: 2px solid #4caf50;
+  animation: successPop 0.4s ease;
+}
+
+@keyframes successPop {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.success-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #4caf50;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.success-text strong {
+  display: block;
+  color: #1a1a2e;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.success-text p {
+  color: #4caf50;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.available-promos {
+  padding-top: 25px;
+  border-top: 1px solid #e8eef5;
+}
+
+.available-promos h4 {
+  font-size: 16px;
+  color: #1a1a2e;
+  margin: 0 0 15px;
+  font-weight: 700;
+}
+
+.promo-tags {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.promo-tag {
+  padding: 10px 15px;
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.05) 0%, rgba(0, 82, 163, 0.05) 100%);
+  border-radius: 8px;
+  font-size: 13px;
+  color: #0066cc;
+  font-weight: 600;
+  border: 1px solid rgba(0, 102, 204, 0.2);
+}
+
+/* Loyalty Section */
+.loyalty-section {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.loyalty-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.loyalty-header h3 {
+  font-size: 28px;
+  color: #1a1a2e;
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
+.loyalty-header > div > p {
+  color: #666;
+  font-size: 15px;
+  margin: 0;
+}
+
+.loyalty-points-badge {
+  text-align: center;
+  padding: 20px 25px;
+  background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 102, 204, 0.3);
+}
+
+.points-number {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.points-label {
+  font-size: 13px;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Current Tier Card */
+.current-tier-card {
+  padding: 25px;
+  border-radius: 12px;
+  border: 3px solid;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.tier-badge {
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.current-tier-card h4 {
+  font-size: 20px;
+  color: #1a1a2e;
+  margin: 0 0 20px;
+  font-weight: 700;
+}
+
+.tier-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  color: #1a1a2e;
+  font-weight: 600;
+}
+
+.benefit-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #4caf50;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+/* Tier Progress */
+.tier-progress {
+  margin-bottom: 30px;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+}
+
+.progress-bar {
+  height: 12px;
+  background: #e8eef5;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  transition: width 0.5s ease;
+  border-radius: 6px;
+}
+
+/* All Tiers */
+.all-tiers {
+  margin-bottom: 30px;
+}
+
+.all-tiers h4 {
+  font-size: 18px;
+  color: #1a1a2e;
+  margin: 0 0 20px;
+  font-weight: 700;
+}
+
+.tiers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.tier-card {
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.tier-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tier-card.active {
+  background: rgba(0, 102, 204, 0.05);
+  box-shadow: 0 8px 20px rgba(0, 102, 204, 0.15);
+}
+
+.tier-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.tier-card h5 {
+  font-size: 16px;
+  color: #1a1a2e;
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+
+.tier-points {
+  font-size: 12px;
+  color: #666;
+  margin: 0 0 15px;
+  font-weight: 600;
+}
+
+.tier-perks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tier-perks li {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Earn Points Section */
+.earn-points-section h4 {
+  font-size: 18px;
+  color: #1a1a2e;
+  margin: 0 0 20px;
+  font-weight: 700;
+}
+
+.earn-points-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.earn-point-card {
+  padding: 20px;
+  background: #f9fbfd;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #e8eef5;
+  transition: all 0.3s ease;
+}
+
+.earn-point-card:hover {
+  border-color: #0066cc;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 102, 204, 0.1);
+}
+
+.earn-icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.earn-point-card h5 {
+  font-size: 15px;
+  color: #1a1a2e;
+  margin: 0 0 6px;
+  font-weight: 700;
+}
+
+.earn-point-card p {
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .promo-loyalty-section .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .promo-section,
+  .loyalty-section {
+    padding: 30px 20px;
+  }
+
+  .loyalty-header {
+    flex-direction: column;
+  }
+
+  .loyalty-points-badge {
+    width: 100%;
+  }
+
+  .tiers-grid,
+  .earn-points-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .promo-input-group {
+    flex-direction: column;
+  }
+
+  .promo-apply-btn,
+  .promo-remove-btn {
+    width: 100%;
+  }
+}

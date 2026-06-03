@@ -1,0 +1,17 @@
+# Robots.txt for Dial a Driver Hermanus
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Specific crawl-delay for Google
+User-agent: Googlebot
+Crawl-delay: 1
+
+# Specific crawl-delay for Bing
+User-agent: Bingbot
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://francois2botha-star.github.io/dial-a-driver-hermanus/sitemap.xml

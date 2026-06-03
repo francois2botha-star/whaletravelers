@@ -1,0 +1,88 @@
+.tour-videos {
+  margin: 60px 0;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, rgba(255, 193, 7, 0.05) 0%, rgba(26, 26, 46, 0.03) 100%);
+  border-radius: 12px;
+}
+
+.tour-videos h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1a1a2e;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.video-item {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.tour-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #000;
+}
+
+.video-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.loading-spinner {
+  font-size: 3rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+  .tour-videos {
+    margin: 40px 0;
+    padding: 30px 15px;
+  }
+
+  .tour-videos h3 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+
+  .videos-grid {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tour-videos h3 {
+    font-size: 1.3rem;
+  }
+
+  .videos-grid {
+    gap: 10px;
+  }
+}

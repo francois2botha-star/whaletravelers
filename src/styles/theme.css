@@ -1,0 +1,97 @@
+/* Whale Travelers — Ocean & Coastal Theme */
+:root {
+  /* Primary Colors - Deep Ocean */
+  --primary-dark: #03112a;
+  --primary: #062445;
+  --primary-light: #0a3d6b;
+  --primary-lighter: #1a5f8a;
+  
+  /* Accent Colors - Coastal Teal & Seafoam */
+  --accent-sunset: #00b4d8;
+  --accent-warm: #0096c7;
+  --accent-wine: #023e8a;
+  --accent-gold: #48cae4;
+  
+  /* Nature Colors */
+  --nature-forest: #1b4332;
+  --nature-fynbos: #52b788;
+  --nature-sage: #74c69d;
+  --nature-cream: #f0f7ff;
+  
+  /* Deep Neutrals */
+  --whale-dark: #03112a;
+  --ocean-deep: #051e40;
+  --ocean-mid: #062445;
+  --ocean-light: #0a3d6b;
+  --water-foam: #e0f4ff;
+  
+  /* Neutrals */
+  --text-dark: #0b0b0f;
+  --text-dark-alt: #111827;
+  --text-muted: #6b7280;
+  --text-light: #9ca3af;
+  --bg-white: #ffffff;
+  --bg-light: #f7f7f5;
+  --bg-lighter: #f1f1ee;
+  --bg-dark: #0b0b0f;
+  --border-light: #e5e7eb;
+  --border-mid: #d1d5db;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+  --spacing-4xl: 6rem;
+  
+  /* Typography */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-serif: Georgia, 'Times New Roman', serif;
+  
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  
+  /* Border Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 350ms ease;
+  
+  /* Z-index scale */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+}
+
+/* Color utilities for quick access */
+.text-primary { color: var(--primary); }
+.text-accent { color: var(--accent-sunset); }
+.text-muted { color: var(--text-muted); }
+.bg-primary { background: var(--primary); }
+.bg-light { background: var(--bg-light); }

@@ -1,0 +1,64 @@
+.floating-cta {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 999;
+}
+
+.floating-cta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 0;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: white;
+}
+
+.floating-cta-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.floating-cta-btn.call {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+}
+
+.floating-cta-btn.call:hover {
+  background: linear-gradient(135deg, #ff5252 0%, #ee3a5e 100%);
+}
+
+.floating-cta-btn.whatsapp {
+  background: linear-gradient(135deg, #25d366 0%, #20ba5a 100%);
+}
+
+.floating-cta-btn.whatsapp:hover {
+  background: linear-gradient(135deg, #20c35e 0%, #1ba850 100%);
+}
+
+@media (max-width: 768px) {
+  .floating-cta {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .floating-cta-btn {
+    width: 45px;
+    height: 45px;
+  }
+
+  .floating-cta-btn:hover {
+    transform: scale(1.05);
+  }
+}

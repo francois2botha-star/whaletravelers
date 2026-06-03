@@ -1,0 +1,280 @@
+.pricing-calculator-section {
+  padding: 60px 20px;
+  background: linear-gradient(180deg, #e0f4ff 0%, #f0f9ff 100%);
+}
+
+.pricing-calculator-section .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.calculator-wrapper {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(6, 36, 69, 0.12);
+}
+
+.calculator-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.calculator-header h2 {
+  font-size: 2rem;
+  color: #062445;
+  margin: 0 0 8px;
+}
+
+.calculator-header p {
+  color: #555;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.calculator-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Popular Routes */
+.popular-routes {
+  background: #f0f9ff;
+  border-radius: 12px;
+  padding: 16px 20px;
+}
+
+.routes-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #062445;
+  margin: 0 0 10px;
+}
+
+.routes-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.route-chip {
+  background: white;
+  border: 1px solid #00b4d8;
+  color: #062445;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.route-chip:hover {
+  background: #00b4d8;
+  color: white;
+  border-color: #00b4d8;
+}
+
+/* Inputs */
+.calculator-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-group label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #062445;
+}
+
+.input-group input[type="text"],
+.input-group input[type="number"] {
+  padding: 12px 14px;
+  border: 2px solid #d0e8f7;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+  color: #062445;
+}
+
+.input-group input:focus {
+  border-color: #00b4d8;
+}
+
+.toggle-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* Vehicle buttons */
+.vehicle-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.vehicle-btn {
+  padding: 10px 18px;
+  border: 2px solid #d0e8f7;
+  border-radius: 10px;
+  background: white;
+  color: #062445;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.vehicle-btn:hover {
+  border-color: #00b4d8;
+  color: #00b4d8;
+}
+
+.vehicle-btn.active {
+  background: #062445;
+  border-color: #062445;
+  color: white;
+}
+
+/* Calculate button */
+.calc-btn {
+  background: linear-gradient(135deg, #00b4d8 0%, #0096c7 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 14px rgba(0, 150, 199, 0.35);
+}
+
+.calc-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 150, 199, 0.45);
+}
+
+.calc-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.calc-error {
+  color: #c0392b;
+  font-size: 0.9rem;
+  padding: 10px 14px;
+  background: #fdf0f0;
+  border-radius: 8px;
+}
+
+/* Result */
+.calculator-result {
+  background: linear-gradient(135deg, #062445 0%, #0a3d6b 100%);
+  border-radius: 16px;
+  padding: 28px;
+  color: white;
+  text-align: center;
+}
+
+.result-header h3 {
+  margin: 0 0 4px;
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
+
+.result-vehicle {
+  margin: 0 0 20px;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.result-prices {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.price-card {
+  background: rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 18px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-width: 150px;
+}
+
+.price-card.return {
+  background: rgba(0, 180, 216, 0.25);
+}
+
+.price-label {
+  font-size: 0.8rem;
+  opacity: 0.75;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.price-value {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #48cae4;
+}
+
+.price-km {
+  font-size: 0.78rem;
+  opacity: 0.6;
+}
+
+.result-note {
+  font-size: 0.82rem;
+  opacity: 0.7;
+  margin: 0 0 18px;
+}
+
+.book-via-wa {
+  display: inline-block;
+  background: #25d366;
+  color: white;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.book-via-wa:hover {
+  background: #1da851;
+}
+
+@media (max-width: 600px) {
+  .calculator-wrapper {
+    padding: 24px 16px;
+  }
+  .result-prices {
+    flex-direction: column;
+    align-items: center;
+  }
+  .price-card {
+    width: 100%;
+  }
+}

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Hosting & Management Service Proposal - Dial-a-Driver Hermanus</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            page-break-after: avoid;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 3px solid #1a5f7a;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .header-left h1 {
+            font-size: 24px;
+            color: #1a5f7a;
+            margin-bottom: 5px;
+        }
+        
+        .header-left p {
+            font-size: 13px;
+            color: #666;
+            margin: 3px 0;
+        }
+        
+        .header-right {
+            text-align: right;
+            font-size: 13px;
+        }
+        
+        .header-right h2 {
+            font-size: 16px;
+            color: #d97706;
+            margin-bottom: 10px;
+        }
+        
+        .proposal-title {
+            text-align: center;
+            background: #f0f9ff;
+            padding: 15px;
+            border-left: 4px solid #1a5f7a;
+            border-right: 4px solid #d97706;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+        
+        .proposal-title h2 {
+            font-size: 20px;
+            color: #1a5f7a;
+            margin-bottom: 5px;
+        }
+        
+        .proposal-title p {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .section {
+            margin: 25px 0;
+            page-break-inside: avoid;
+        }
+        
+        .section-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #1a5f7a;
+            border-bottom: 2px solid #d97706;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .info-row {
+            display: flex;
+            margin-bottom: 12px;
+            font-size: 13px;
+        }
+        
+        .info-label {
+            font-weight: 600;
+            width: 140px;
+            color: #1a5f7a;
+        }
+        
+        .info-value {
+            color: #333;
+            flex: 1;
+        }
+        
+        .service-details {
+            background: #f9fafb;
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        
+        .service-price {
+            font-size: 28px;
+            font-weight: 700;
+            color: #d97706;
+            margin-bottom: 15px;
+        }
+        
+        .service-price-period {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .inclusions, .exclusions {
+            margin: 20px 0;
+        }
+        
+        .inclusions-title, .exclusions-title {
+            font-weight: 700;
+            color: #1a5f7a;
+            font-size: 13px;
+            margin-bottom: 10px;
+            margin-top: 15px;
+        }
+        
+        .inclusions ul, .exclusions ul {
+            margin-left: 20px;
+            font-size: 13px;
+        }
+        
+        .inclusions li, .exclusions li {
+            margin-bottom: 8px;
+            color: #333;
+        }
+        
+        .inclusions li:before {
+            content: "✓ ";
+            color: #10b981;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        .exclusions li:before {
+            content: "• ";
+            color: #ef4444;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        .terms-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin: 20px 0;
+        }
+        
+        .terms-table th {
+            background: #1a5f7a;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            border: none;
+        }
+        
+        .terms-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .terms-table tr:nth-child(even) {
+            background: #f9fafb;
+        }
+        
+        .next-steps {
+            background: #fef3c7;
+            padding: 15px;
+            border-left: 4px solid #d97706;
+            border-radius: 4px;
+            font-size: 13px;
+            margin: 25px 0;
+        }
+        
+        .next-steps h3 {
+            color: #92400e;
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+        
+        .next-steps p {
+            color: #78350f;
+            margin-bottom: 5px;
+        }
+        
+        .signature-section {
+            margin-top: 35px;
+            padding-top: 20px;
+            border-top: 2px solid #e5e7eb;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+        }
+        
+        .signature-block {
+            width: 45%;
+        }
+        
+        .signature-line {
+            border-top: 1px solid #333;
+            margin-top: 35px;
+            padding-top: 5px;
+        }
+        
+        .footer {
+            text-align: center;
+            font-size: 11px;
+            color: #999;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e7eb;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                padding: 40px;
+                max-width: 100%;
+            }
+        }
+        
+        .highlight {
+            background: #fef3c7;
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #92400e;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-left">
+                <h1>Dial-a-Driver Hermanus</h1>
+                <p>📍 Hermanus, South Africa</p>
+                <p>🌐 dialadriverhermanus.co.za</p>
+            </div>
+            <div class="header-right">
+                <h2>SERVICE PROPOSAL</h2>
+                <p><strong>Prepared by:</strong> Francois Botha</p>
+                <p>Web Manager</p>
+                <p style="margin-top: 10px; color: #999;">Date: <span id="currentDate"></span></p>
+            </div>
+        </div>
+        
+        <!-- Proposal Title -->
+        <div class="proposal-title">
+            <h2>Complete Web Hosting & Management Service</h2>
+            <p>Professional Website Hosting, Maintenance, SEO Optimization & Monthly Performance Reports</p>
+        </div>
+        
+        <!-- Client Details Section -->
+        <div class="section">
+            <div class="section-title">Client Information</div>
+            <div class="info-row">
+                <div class="info-label">Client Name:</div>
+                <div class="info-value">Itayi</div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">Business:</div>
+                <div class="info-value">Dial-a-Driver Hermanus</div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">Website:</div>
+                <div class="info-value">dialadriverhermanus.co.za</div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">Service Period:</div>
+                <div class="info-value">Ongoing (Month-to-month)</div>
+            </div>
+        </div>
+        
+        <!-- Service Details Section -->
+        <div class="section">
+            <div class="section-title">Service Overview</div>
+            <div class="service-details">
+                <div class="service-price">
+                    R100.00 <span class="service-price-period">/month (ZAR)</span>
+                </div>
+                <p style="color: #333; font-size: 13px; line-height: 1.7;">Your website deserves reliable hosting and active management. This comprehensive package includes <strong>professional hosting, ongoing maintenance, security management, and detailed performance reporting</strong> – all managed directly by Francois Botha. Receive monthly reports showing website traffic, visitor behavior, SEO performance, and actionable insights to grow your online presence.</p>
+            </div>
+        </div>
+        
+        <!-- Why Switch Section -->
+        <div class="section">
+            <div class="section-title">Why Choose This Service?</div>
+            <div class="inclusions">
+                <ul>
+                    <li><strong>Direct Management</strong> – Work with Francois Botha directly, no middlemen or outsourced support</li>
+                    <li><strong>Transparent Reporting</strong> – Monthly reports showing clicks, visitor counts, traffic sources, and SEO rankings</li>
+                    <li><strong>Complete Control</strong> – All your website files, data, and backups are yours with full transparency</li>
+                    <li><strong>Quick Response Times</strong> – Priority support with 24-48 hour response for any updates or issues</li>
+                    <li><strong>Cost-Effective</strong> – R100/month for full hosting and management beats paying separate vendors</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Inclusions & Exclusions -->
+        <div class="section">
+            <div class="section-title">What's Included Every Month</div>
+            <div class="inclusions">
+                <ul>
+                    <li><strong>Professional Web Hosting</strong> – Enterprise-grade secure cloud hosting with 99.9% uptime guarantee and DDoS protection</li>
+                    <li><strong>SSL Certificate & Security</strong> – Automatic SSL management, security updates, and malware monitoring</li>
+                    <li><strong>Weekly Backups</strong> – Automated backups every week ensuring your data is always safe and recoverable</li>
+                    <li><strong>Monthly Performance Reports</strong> – Detailed reports showing website clicks, visitor numbers, traffic sources, bounce rates, and SEO performance metrics</li>
+                    <li><strong>Quick Updates</strong> – Up to 1 hour per month for content updates: prices, phone numbers, photos, text changes, and minor tweaks</li>
+                    <li><strong>SEO Optimization</strong> – Ongoing SEO improvements including keyword tracking, search ranking reports, and optimization recommendations</li>
+                </ul>
+            </div>
+            
+            <div class="exclusions">
+                <div class="exclusions-title">Not Included (Quoted Separately)</div>
+                <ul>
+                    <li>Major website redesigns or complete rebuilds</li>
+                    <li>New feature development or custom functionality beyond scope</li>
+                    <li>Hourly work beyond the included 1 hour per month</li>
+                    <li>Third-party integrations requiring extensive custom development</li>
+                </ul>
+                <p style="font-size: 12px; color: #666; margin-top: 10px;"><em>Any additional work is quoted separately so you always know the cost upfront.</em></p>
+            </div>
+        </div>
+        
+        <!-- Service Terms -->
+        <div class="section">
+            <div class="section-title">Service Terms & Conditions</div>
+            <table class="terms-table">
+                <thead>
+                    <tr>
+                        <th>Term</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Monthly Cost</strong></td>
+                        <td>R100.00 ZAR (excluding VAT if applicable)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Payment Due Date</strong></td>
+                        <td>1st of each month via Electronic Funds Transfer (EFT)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Contract Period</strong></td>
+                        <td>Month-to-month (30 days notice to cancel)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Support Hours</strong></td>
+                        <td>Monday–Friday, 09:00–17:00 SAST</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Response Time</strong></td>
+                        <td>24–48 hours for non-emergency requests</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Next Steps -->
+        <div class="next-steps">
+            <h3>How It Works</h3>
+            <p>✓ You approve this proposal</p>
+            <p>✓ We migrate your website to secure hosting managed by Francois Botha</p>
+            <p>✓ Starting Month 1: Receive your first monthly performance report (clicks, visitors, traffic sources, SEO metrics)</p>
+            <p>✓ Every month: R100.00 EFT payment for hosting, updates, and monthly reporting</p>
+        </div>
+        
+        <!-- Signature Section -->
+        <div style="text-align: center; margin-top: 20px; padding: 15px; background: #f0f9ff; border-radius: 4px;">
+            <p style="font-size: 13px; color: #1a5f7a;"><strong>Interested in this service?</strong> Contact Francois Botha to get started.</p>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p>Ready to upgrade your web hosting and get transparent monthly reports? Let's talk.</p>
+            <p style="margin-top: 10px; font-size: 10px;">Contact Francois Botha • Web Manager & Developer • dialadriverhermanus.co.za Management Services</p>
+        </div>
+    </div>
+    
+    <script>
+        // Set current date
+        const today = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('currentDate').textContent = today.toLocaleDateString('en-ZA', options);
+    </script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './Header.css'
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.jpeg'
 
 function Header({ onNavigate, activeSection }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)

@@ -32,21 +32,9 @@
 
 .activities-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
   gap: 24px;
   margin-bottom: 40px;
-}
-
-@media (min-width: 900px) {
-  .activities-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1400px) {
-  .activities-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 .activity-card {
@@ -61,19 +49,26 @@
   grid-auto-rows: min-content;
   gap: 16px;
   align-items: start;
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
   .activity-card {
-    grid-template-columns: 280px 1fr;
+    grid-template-columns: minmax(0, 240px) minmax(0, 1fr);
     align-items: center;
   }
 }
 
 @media (min-width: 1024px) {
   .activity-card {
-    grid-template-columns: 340px 1fr;
+    grid-template-columns: minmax(0, 280px) minmax(0, 1fr);
   }
+}
+
+.activity-card > * {
+  min-width: 0;
 }
 
 .activity-card:hover {
@@ -129,6 +124,7 @@
   font-weight: 700;
   line-height: 1.3;
   grid-column: 1;
+  overflow-wrap: anywhere;
 }
 
 @media (min-width: 768px) {
@@ -144,6 +140,7 @@
   margin-bottom: 12px;
   flex-grow: 1;
   grid-column: 1;
+  overflow-wrap: anywhere;
 }
 
 @media (min-width: 768px) {
@@ -248,7 +245,7 @@
 
   .activity-card {
     padding: 10px;
-    grid-template-columns: 140px 1fr;
+    grid-template-columns: 1fr;
     gap: 8px;
   }
 

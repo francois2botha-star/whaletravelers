@@ -9,7 +9,7 @@
 .carousel-container .carousel-wrapper {
   position: relative;
   width: 100%;
-  padding-bottom: 60.48%; /* 20% taller than 50.4% */
+  padding-bottom: 42.34%;
   overflow: hidden;
 }
 
@@ -81,7 +81,7 @@
 
 .carousel-container .carousel-caption h3 {
   margin: 0;
-  font-size: clamp(0.9rem, 1.2vw + 0.4rem, 1.15rem);
+  font-size: clamp(1.17rem, 1.56vw + 0.52rem, 1.5rem);
   font-weight: 700;
   text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
   line-height: 1.6;
@@ -91,7 +91,7 @@
 
 .carousel-container .carousel-description {
   margin: 0;
-  font-size: clamp(0.9rem, 1.2vw + 0.35rem, 1.15rem);
+  font-size: clamp(1.17rem, 1.56vw + 0.46rem, 1.5rem);
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.95);
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
@@ -220,7 +220,7 @@
   }
 
   .carousel-wrapper {
-    padding-bottom: 144%; /* 20% taller than 120% for mobile */
+    padding-bottom: 100.8%;
     width: 100%;
   }
 
@@ -233,12 +233,12 @@
   }
 
   .carousel-caption h3 {
-    font-size: clamp(0.8rem, 2.2vw + 0.2rem, 0.95rem);
+    font-size: clamp(1.04rem, 2.86vw + 0.26rem, 1.24rem);
     line-height: 1.3;
   }
 
   .carousel-description {
-    font-size: clamp(0.8rem, 2.2vw + 0.2rem, 0.95rem);
+    font-size: clamp(1.04rem, 2.86vw + 0.26rem, 1.24rem);
     line-height: 1.3;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -288,7 +288,7 @@
 
 @media (max-width: 480px) {
   .carousel-wrapper {
-    padding-bottom: 120%; /* 20% taller than 100% for very small screens */
+    padding-bottom: 84%;
     width: 100%;
   }
 
@@ -298,11 +298,11 @@
   }
 
   .carousel-caption h3 {
-    font-size: 1.1rem;
+    font-size: 1.43rem;
   }
 
   .carousel-description {
-    font-size: 0.8rem;
+    font-size: 1.04rem;
     line-height: 1.3;
   }
 

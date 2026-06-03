@@ -4,7 +4,7 @@
 .header {
   position: relative !important;
   width: 100%;
-  background: rgba(11, 11, 15, 0.92);
+  background: linear-gradient(135deg, var(--whale-dark) 0%, var(--ocean-deep) 100%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
   overflow: visible;

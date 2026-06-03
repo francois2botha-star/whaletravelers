@@ -112,13 +112,13 @@
   background: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
   color: var(--accent-gold);
-  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.2);
+  box-shadow: 0 4px 12px rgba(44, 195, 223, 0.2);
 }
 
 .footer-bottom {
   text-align: center;
   padding: var(--spacing-xl) var(--spacing-lg);
-  border-top: 1px solid rgba(255, 193, 7, 0.2);
+  border-top: 1px solid rgba(44, 195, 223, 0.2);
   opacity: 0.85;
   font-size: var(--text-sm);
   max-width: 1200px;
@@ -151,3 +151,5 @@
     justify-content: center;
   }
 }
+
+

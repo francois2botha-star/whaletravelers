@@ -15,7 +15,7 @@
 
 .faq-header h2 {
   font-size: 36px;
-  color: #1a1a2e;
+  color: var(--ink-deep);
   margin: 0 0 10px;
 }
 
@@ -62,7 +62,7 @@
   transition: all 0.3s ease;
   font-size: 16px;
   font-weight: 600;
-  color: #1a1a2e;
+  color: var(--ink-deep);
   text-align: left;
 }
 
@@ -131,7 +131,7 @@
 
 .faq-support h3 {
   font-size: 24px;
-  color: #1a1a2e;
+  color: var(--ink-deep);
   margin: 0 0 10px;
 }
 
@@ -227,3 +227,5 @@
     padding: 30px 20px;
   }
 }
+
+

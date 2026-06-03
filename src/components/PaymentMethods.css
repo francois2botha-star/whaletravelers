@@ -12,7 +12,7 @@
 
 .payment-header h3 {
   font-size: 24px;
-  color: #1a1a2e;
+  color: var(--ink-deep);
   margin: 0 0 8px;
   font-weight: 700;
 }
@@ -80,7 +80,7 @@
 .payment-name {
   font-size: 16px;
   font-weight: 700;
-  color: #1a1a2e;
+  color: var(--ink-deep);
   margin: 0 0 5px;
 }
 
@@ -159,7 +159,7 @@
   display: block;
   font-size: 13px;
   font-weight: 600;
-  color: #1a1a2e;
+  color: var(--ink-deep);
   margin-bottom: 8px;
 }
 
@@ -202,7 +202,7 @@
 /* Bank Details */
 .bank-details h4 {
   font-size: 18px;
-  color: #1a1a2e;
+  color: var(--ink-deep);
   margin: 0 0 20px;
   font-weight: 700;
 }
@@ -233,7 +233,7 @@
 
 .bank-row .value {
   font-weight: 700;
-  color: #1a1a2e;
+  color: var(--ink-deep);
   font-size: 14px;
 }
 
@@ -242,9 +242,9 @@
   color: #666;
   margin: 0;
   padding: 12px;
-  background: rgba(255, 193, 7, 0.1);
+  background: rgba(44, 195, 223, 0.1);
   border-radius: 6px;
-  border-left: 3px solid #ffc107;
+  border-left: 3px solid var(--brand-highlight);
 }
 
 /* Cash Details */
@@ -260,7 +260,7 @@
 
 .cash-details h4 {
   font-size: 20px;
-  color: #1a1a2e;
+  color: var(--ink-deep);
   margin: 0 0 10px;
   font-weight: 700;
 }
@@ -310,7 +310,7 @@
   border-radius: 8px;
   font-size: 14px;
   font-weight: 600;
-  color: #1a1a2e;
+  color: var(--ink-deep);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
@@ -347,3 +347,5 @@
     width: 100%;
   }
 }
+
+

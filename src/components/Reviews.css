@@ -1,5 +1,5 @@
 .reviews-section {
-  background: linear-gradient(135deg, rgba(26, 26, 46, 0.02) 0%, rgba(255, 193, 7, 0.02) 100%);
+  background: linear-gradient(135deg, rgba(12, 37, 64, 0.02) 0%, rgba(44, 195, 223, 0.02) 100%);
   padding: 80px 0;
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
@@ -33,12 +33,12 @@
   border-radius: 25px;
   font-weight: 600;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+  box-shadow: 0 4px 15px rgba(44, 195, 223, 0.3);
 }
 
 .google-link:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 193, 7, 0.4);
+  box-shadow: 0 6px 20px rgba(44, 195, 223, 0.4);
 }
 
 .reviews-carousel {
@@ -92,7 +92,7 @@
 }
 
 .stars {
-  color: #ffc107;
+  color: var(--brand-highlight);
   font-size: 1.2rem;
   letter-spacing: 2px;
 }
@@ -317,3 +317,5 @@
     font-size: 1rem;
   }
 }
+
+

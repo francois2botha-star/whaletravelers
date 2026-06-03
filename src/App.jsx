@@ -8,7 +8,6 @@ import Booking from './components/Booking'
 import About from './components/About'
 import PricingCalculator from './components/PricingCalculator'
 import Activities from './components/Activities'
-import VehiclesGallery from './components/VehiclesGallery'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import SocialFloatingButtons from './components/SocialFloatingButtons'
@@ -65,7 +64,6 @@ function App() {
           <Activities onNavigate={(s) => { setActiveSection(s); window.location.hash = s }} />
         </>
       )}
-      {activeSection === 'vehicles' && <VehiclesGallery />}
       {activeSection === 'booking' && <Booking onNavigate={(s) => { setActiveSection(s); window.location.hash = s }} />}
       {activeSection === 'contact' && <Contact onNavigate={(s) => { setActiveSection(s); window.location.hash = s }} />}
       <Footer onNavigate={(s) => { setActiveSection(s); window.location.hash = s }} />

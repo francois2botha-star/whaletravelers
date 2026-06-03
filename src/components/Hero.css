@@ -14,7 +14,7 @@
   padding: 2rem 2rem;
   margin-top: 0;
   z-index: 1;
-  color: #daa520;
+  color: var(--brand-highlight);
 }
 
 .hero-content {
@@ -85,14 +85,14 @@
 }
 
 .hero-btn.primary {
-  background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%);
-  color: #1a1a2e;
-  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
+  background: linear-gradient(135deg, var(--brand-highlight) 0%, var(--brand-accent) 100%);
+  color: var(--ink-deep);
+  box-shadow: 0 4px 15px rgba(44, 195, 223, 0.4);
 }
 
 .hero-btn.primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 193, 7, 0.5);
+  box-shadow: 0 6px 20px rgba(44, 195, 223, 0.5);
 }
 
 .hero-btn.secondary {
@@ -139,13 +139,13 @@
 .cta-btn.primary {
   background: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-sunset) 100%);
   color: #0b0b0f;
-  box-shadow: 0 10px 24px rgba(214, 179, 90, 0.35);
+  box-shadow: 0 10px 24px rgba(44, 195, 223, 0.35);
   border: none;
 }
 
 .cta-btn.primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 14px 36px rgba(214, 179, 90, 0.45);
+  box-shadow: 0 14px 36px rgba(44, 195, 223, 0.45);
 }
 
 .cta-btn.secondary {
@@ -177,7 +177,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 20% 30%, rgba(214, 179, 90, 0.12), transparent 50%);
+  background: radial-gradient(circle at 20% 30%, rgba(44, 195, 223, 0.12), transparent 50%);
 }
 
 @media (max-width: 1200px) {
@@ -295,3 +295,5 @@
     font-size: 0.65rem;
   }
 }
+
+

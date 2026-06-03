@@ -1,6 +1,6 @@
 .promo-loyalty-section {
   padding: 60px 20px;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: linear-gradient(135deg, var(--bg-light) 0%, #e9ecef 100%);
 }
 
 .promo-loyalty-section .container {
@@ -21,7 +21,7 @@
 
 .promo-section h3 {
   font-size: 28px;
-  color: #1a1a2e;
+  color: var(--ink-deep);
   margin: 0 0 10px;
   font-weight: 700;
 }
@@ -147,7 +147,7 @@
 
 .success-text strong {
   display: block;
-  color: #1a1a2e;
+  color: var(--ink-deep);
   font-size: 16px;
   margin-bottom: 4px;
 }
@@ -166,7 +166,7 @@
 
 .available-promos h4 {
   font-size: 16px;
-  color: #1a1a2e;
+  color: var(--ink-deep);
   margin: 0 0 15px;
   font-weight: 700;
 }
@@ -205,7 +205,7 @@
 
 .loyalty-header h3 {
   font-size: 28px;
-  color: #1a1a2e;
+  color: var(--ink-deep);
   margin: 0 0 10px;
   font-weight: 700;
 }
@@ -264,7 +264,7 @@
 
 .current-tier-card h4 {
   font-size: 20px;
-  color: #1a1a2e;
+  color: var(--ink-deep);
   margin: 0 0 20px;
   font-weight: 700;
 }
@@ -280,7 +280,7 @@
   align-items: center;
   gap: 10px;
   font-size: 15px;
-  color: #1a1a2e;
+  color: var(--ink-deep);
   font-weight: 600;
 }
 
@@ -331,7 +331,7 @@
 
 .all-tiers h4 {
   font-size: 18px;
-  color: #1a1a2e;
+  color: var(--ink-deep);
   margin: 0 0 20px;
   font-weight: 700;
 }
@@ -373,7 +373,7 @@
 
 .tier-card h5 {
   font-size: 16px;
-  color: #1a1a2e;
+  color: var(--ink-deep);
   margin: 0 0 8px;
   font-weight: 700;
 }
@@ -402,7 +402,7 @@
 /* Earn Points Section */
 .earn-points-section h4 {
   font-size: 18px;
-  color: #1a1a2e;
+  color: var(--ink-deep);
   margin: 0 0 20px;
   font-weight: 700;
 }
@@ -435,7 +435,7 @@
 
 .earn-point-card h5 {
   font-size: 15px;
-  color: #1a1a2e;
+  color: var(--ink-deep);
   margin: 0 0 6px;
   font-weight: 700;
 }
@@ -481,3 +481,5 @@
     width: 100%;
   }
 }
+
+

@@ -1,41 +1,47 @@
 /* Whale Travelers — Ocean & Coastal Theme */
 :root {
-  /* Primary Colors - Deep Ocean */
-  --primary-dark: #03112a;
-  --primary: #062445;
-  --primary-light: #0a3d6b;
-  --primary-lighter: #1a5f8a;
-  
-  /* Accent Colors - Coastal Teal & Seafoam */
-  --accent-sunset: #00b4d8;
-  --accent-warm: #0096c7;
-  --accent-wine: #023e8a;
-  --accent-gold: #48cae4;
+  /* Primary Colors - Whale Travelers Brand Ocean */
+  --primary-dark: #06162d;
+  --primary: #0d2d4f;
+  --primary-light: #1d4f78;
+  --primary-lighter: #2a6b98;
+
+  /* Accent Colors - Sealife Teal */
+  --accent-sunset: #2cc3df;
+  --accent-warm: #1ba4c8;
+  --accent-wine: #0f4b7a;
+  --accent-gold: #7bd9eb;
+
+  /* Elegant highlight accents */
+  --brand-highlight: #2cc3df;
+  --brand-accent: #1ba4c8;
+  --brand-accent-dark: #1283a3;
+  --ink-deep: #10263f;
   
   /* Nature Colors */
   --nature-forest: #1b4332;
   --nature-fynbos: #52b788;
   --nature-sage: #74c69d;
-  --nature-cream: #f0f7ff;
+  --nature-cream: #f2f8fc;
   
   /* Deep Neutrals */
-  --whale-dark: #03112a;
-  --ocean-deep: #051e40;
-  --ocean-mid: #062445;
-  --ocean-light: #0a3d6b;
-  --water-foam: #e0f4ff;
+  --whale-dark: #06162d;
+  --ocean-deep: #0b213e;
+  --ocean-mid: #12365c;
+  --ocean-light: #2a6b98;
+  --water-foam: #e9f7fb;
   
   /* Neutrals */
-  --text-dark: #0b0b0f;
-  --text-dark-alt: #111827;
-  --text-muted: #6b7280;
-  --text-light: #9ca3af;
+  --text-dark: #12263f;
+  --text-dark-alt: #1a3553;
+  --text-muted: #4f647b;
+  --text-light: #7c8fa3;
   --bg-white: #ffffff;
-  --bg-light: #f7f7f5;
-  --bg-lighter: #f1f1ee;
-  --bg-dark: #0b0b0f;
-  --border-light: #e5e7eb;
-  --border-mid: #d1d5db;
+  --bg-light: #f4f9fc;
+  --bg-lighter: #edf5fa;
+  --bg-dark: #06162d;
+  --border-light: #d7e5ef;
+  --border-mid: #bfd2df;
   
   /* Spacing */
   --spacing-xs: 0.25rem;
@@ -48,8 +54,8 @@
   --spacing-4xl: 6rem;
   
   /* Typography */
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  --font-serif: Georgia, 'Times New Roman', serif;
+  --font-sans: 'Manrope', 'Segoe UI', sans-serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
   
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
@@ -87,6 +93,11 @@
   --z-fixed: 1030;
   --z-modal-backdrop: 1040;
   --z-modal: 1050;
+
+  /* Backward compatibility aliases used in legacy component CSS */
+  --primary-color: var(--primary);
+  --accent-color: var(--brand-highlight);
+  --border-color: var(--border-light);
 }
 
 /* Color utilities for quick access */

@@ -101,14 +101,14 @@
 .carousel-container .carousel-book-btn {
   display: inline-block;
   padding: 12px 32px;
-  background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%);
+  background: linear-gradient(135deg, var(--brand-highlight) 0%, var(--brand-accent) 100%);
   color: white;
   text-decoration: none;
   border-radius: 6px;
   font-weight: 700;
   font-size: 1rem;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
+  box-shadow: 0 4px 15px rgba(44, 195, 223, 0.4);
   align-self: flex-start;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -116,8 +116,8 @@
 
 .carousel-container .carousel-book-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 193, 7, 0.6);
-  background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+  box-shadow: 0 6px 20px rgba(44, 195, 223, 0.6);
+  background: linear-gradient(135deg, var(--brand-accent) 0%, var(--brand-accent-dark) 100%);
 }
 
 /* Navigation Buttons */
@@ -323,3 +323,5 @@
     font-size: 0.8rem;
   }
 }
+
+

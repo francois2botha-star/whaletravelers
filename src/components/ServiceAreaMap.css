@@ -11,7 +11,7 @@
 .service-area-map h2 {
   font-size: 36px;
   text-align: center;
-  color: #1a1a2e;
+  color: var(--ink-deep);
   margin: 0 0 10px;
 }
 
@@ -41,7 +41,7 @@
 .location-label {
   font-size: 14px;
   font-weight: 600;
-  fill: #1a1a2e;
+  fill: var(--ink-deep);
 }
 
 .location-sublabel {
@@ -90,7 +90,7 @@
 }
 
 .service-zone-card.extended {
-  border-top-color: #ff9800;
+  border-top-color: var(--brand-accent);
 }
 
 .service-zone-card.coverage {
@@ -104,7 +104,7 @@
 
 .service-zone-card h3 {
   font-size: 20px;
-  color: #1a1a2e;
+  color: var(--ink-deep);
   margin: 0 0 10px;
 }
 
@@ -196,3 +196,5 @@
     font-size: 20px;
   }
 }
+
+

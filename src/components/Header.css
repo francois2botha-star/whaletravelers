@@ -20,7 +20,7 @@
   gap: 2rem;
   width: 100%;
   position: relative;
-  min-height: 255px;
+  min-height: 340px;
 }
 
 .header-balancer {
@@ -61,8 +61,8 @@
 }
 
 .logo-img {
-  width: 238px;
-  height: 238px;
+  width: 320px;
+  height: 320px;
   object-fit: contain;
   border-radius: 0;
   background: none;
@@ -416,7 +416,7 @@
   .header-container {
     grid-template-columns: 140px 1fr 140px;
     gap: var(--spacing-md);
-    min-height: 220px;
+    min-height: 300px;
   }
 
   .header-balancer {
@@ -428,8 +428,8 @@
   }
 
   .logo-img {
-    width: 196px;
-    height: 196px;
+    width: 270px;
+    height: 270px;
   }
 
   .nav {
@@ -475,12 +475,12 @@
     padding: 0.75rem 1rem;
     gap: 1rem;
     justify-content: space-between;
-    min-height: 104px;
+    min-height: 150px;
   }
 
   .logo-img {
-    width: 157px;
-    height: 157px;
+    width: 210px;
+    height: 210px;
   }
 
   .logo-text {
@@ -496,12 +496,12 @@
   .header-container {
     padding: 0.75rem 0.75rem;
     gap: 0.75rem;
-    min-height: 78px;
+    min-height: 120px;
   }
 
   .logo-img {
-    width: 132px;
-    height: 132px;
+    width: 176px;
+    height: 176px;
   }
 
   .header-cta-buttons {
@@ -526,8 +526,8 @@
   }
 
   .logo-img {
-    width: 92px;
-    height: 92px;
+    width: 124px;
+    height: 124px;
   }
 
   .header-cta-btn {

@@ -20,9 +20,37 @@ function Header({ onNavigate, activeSection }) {
   return (
     <header className="header">
       <div className="header-container">
-        {/* Logo */}
+        {/* Centered desktop brand + nav */}
+        <div className="header-center-group hide-mobile">
+          <div
+            className="logo"
+            onClick={() => handleNavClick('home')}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') handleNavClick('home')
+            }}
+            role="button"
+            tabIndex="0"
+          >
+            <img src={logo} alt="Whale Travelers Hermanus" className="logo-img" loading="lazy" />
+          </div>
+
+          {/* Desktop Navigation */}
+          <nav className="nav" aria-label="Primary">
+            {navItems.map((item) => (
+              <button
+                key={item.id}
+                className={`nav-link ${activeSection === item.id ? 'active' : ''}`}
+                onClick={() => handleNavClick(item.id)}
+              >
+                <span>{item.label}</span>
+              </button>
+            ))}
+          </nav>
+        </div>
+
+        {/* Mobile logo */}
         <div
-          className="logo"
+          className="logo hide-desktop"
           onClick={() => handleNavClick('home')}
           onKeyDown={(e) => {
             if (e.key === 'Enter' || e.key === ' ') handleNavClick('home')
@@ -32,19 +60,6 @@ function Header({ onNavigate, activeSection }) {
         >
           <img src={logo} alt="Whale Travelers Hermanus" className="logo-img" loading="lazy" />
         </div>
-
-        {/* Desktop Navigation */}
-        <nav className="nav hide-mobile" aria-label="Primary">
-          {navItems.map((item) => (
-            <button
-              key={item.id}
-              className={`nav-link ${activeSection === item.id ? 'active' : ''}`}
-              onClick={() => handleNavClick(item.id)}
-            >
-              <span>{item.label}</span>
-            </button>
-          ))}
-        </nav>
 
         {/* CTA Buttons - Always visible */}
         <div className="header-cta-buttons">

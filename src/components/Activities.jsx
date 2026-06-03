@@ -1,7 +1,5 @@
 import './Activities.css'
 import { siteConfig } from '../config'
-import TourVideos from './TourVideos'
-import TourGallery from './TourGallery'
 import WhaleWatchingVideo from './WhaleWatchingVideo'
 import SEO from './SEO'
 
@@ -113,10 +111,6 @@ function Activities({ onNavigate }) {
             </div>
           ))}
         </div>
-
-        <TourVideos />
-        <TourGallery />
-
         <div className="cta-section">
           <h3>Ready to explore Hermanus?</h3>
           <p>Book your transportation with {siteConfig.business.name} and enjoy a comfortable journey to any of these attractions.</p>

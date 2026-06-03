@@ -8,7 +8,6 @@ function Header({ onNavigate, activeSection }) {
   const navItems = [
     { id: 'home', label: 'Home' },
     { id: 'activities', label: 'Tours' },
-    { id: 'vehicles', label: 'Fleet' },
     { id: 'booking', label: 'Book' },
     { id: 'contact', label: 'Contact' }
   ]

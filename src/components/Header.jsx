@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './Header.css'
-import logo from '../assets/logo.jpeg'
+import logo from '../../logo.png'
 
 function Header({ onNavigate, activeSection }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -20,6 +20,8 @@ function Header({ onNavigate, activeSection }) {
   return (
     <header className="header">
       <div className="header-container">
+        <div className="header-balancer hide-mobile" aria-hidden="true"></div>
+
         {/* Centered desktop brand + nav */}
         <div className="header-center-group hide-mobile">
           <div

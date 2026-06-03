@@ -22,7 +22,7 @@
 
 .booking-intro .subtitle {
   font-size: clamp(1rem, 2vw, 1.5rem);
-  color: var(--accent-gold);
+  color: #ffffff;
   margin-bottom: clamp(1.5rem, 2vw, 2rem);
   font-weight: 500;
 }
@@ -30,22 +30,23 @@
 .booking-intro .description {
   font-size: clamp(0.85rem, 1.2vw, 1.1rem);
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.75);
+  color: #ffffff;
   margin-bottom: clamp(1rem, 1.5vw, 1.5rem);
 }
 
 .booking .tagline {
   font-size: clamp(1.3rem, 2.5vw, 1.8rem);
-  font-style: italic;
+  font-style: normal;
   color: #ffffff;
   margin: clamp(2rem, 3vw, 2.5rem) 0 clamp(1rem, 1.5vw, 1.5rem);
-  font-family: var(--font-serif);
+  font-family: inherit;
+  font-weight: 700;
   text-align: center;
 }
 
 .booking .cta-text {
   font-size: clamp(0.9rem, 1.5vw, 1.2rem);
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: clamp(2rem, 3vw, 2.5rem);
   color: #ffffff;
   text-align: center;
